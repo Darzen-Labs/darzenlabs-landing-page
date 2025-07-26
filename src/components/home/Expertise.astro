@@ -39,16 +39,15 @@ const features = [
 ];
 ---
 
-<section class="py-16 sm:py-20">
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Expertise</h2>
-      <div class="lg:col-span-2">
-        <dl
-          class="-mt-3"
-          x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
-        >
-          {
+<section class="py-12 sm:py-16">
+  <div class="mx-auto px-2 md:px-16 lg:px-44">
+    <div class="flex flex-col gap-8">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl ml-3">Expertise</h2>
+      <dl
+        class="-mt-3"
+        x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
+      >
+        {
             features.map((feature, index) => (
               <div
                 class="rounded-3xl px-4 transition"
@@ -94,7 +93,6 @@ const features = [
             ))
           }
         </dl>
-      </div>
     </div>
   </div>
 </section>

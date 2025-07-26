@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       current: 'currentColor',
       transparent: 'transparent',
-      primary: colors.stone,
+      primary: colors.orange,
       ...colors,
     },
     fontFamily: {
