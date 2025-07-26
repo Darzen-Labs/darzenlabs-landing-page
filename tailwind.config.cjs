@@ -9,8 +9,8 @@ module.exports = {
     colors: {
       current: 'currentColor',
       transparent: 'transparent',
-      white: '#ffffff',
       primary: colors.stone,
+      ...colors,
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
