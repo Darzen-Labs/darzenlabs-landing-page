@@ -1,3 +1,4 @@
+
 ---
 import Stars from "../backgrounds/Stars.astro"
 ---
@@ -29,9 +30,8 @@ import Stars from "../backgrounds/Stars.astro"
   
   /* Tarjeta básica (Free) */
   .pricing-card-basic {
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 24px;
     padding: 32px;
     position: relative;
@@ -43,9 +43,8 @@ import Stars from "../backgrounds/Stars.astro"
   
   /* Tarjeta PRO (destacada) */
   .pricing-card-pro {
-    background: rgba(255, 255, 255, 0.98);
+    background: transparent;
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 24px;
     padding: 32px;
     position: relative;
@@ -58,9 +57,7 @@ import Stars from "../backgrounds/Stars.astro"
   
   /* Tarjeta TEAM */
   .pricing-card-team {
-    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 24px;
     padding: 32px;
     position: relative;
@@ -139,35 +136,8 @@ import Stars from "../backgrounds/Stars.astro"
 </style>
 
 <section class="py-24 sm:py-32 pricing-background min-h-screen flex items-center">
-  <!-- === SISTEMA DE FONDO ESTRELLADO === -->
    <Stars showJupiter={true} showSaturn={true} showMars={true} />
-  <div class="starry-container">
-    <!-- Estrellas grandes -->
-    <div class="star star-large star-1"></div>
-    <div class="star star-large star-2"></div>
-    <div class="star star-large star-3"></div>
-    <div class="star star-large star-4"></div>
-    <div class="star star-large star-5"></div>
-    <div class="star star-large star-6"></div>
-    
-    <!-- Estrellas medianas -->
-    <div class="star star-medium star-7"></div>
-    <div class="star star-medium star-8"></div>
-    <div class="star star-medium star-9"></div>
-    <div class="star star-medium star-10"></div>
-    <div class="star star-medium star-11"></div>
-    <div class="star star-medium star-12"></div>
-    
-    <!-- Estrellas pequeñas -->
-    <div class="star star-small star-13"></div>
-    <div class="star star-small star-14"></div>
-    <div class="star star-small star-15"></div>
-    <div class="star star-small star-16"></div>
-    <div class="star star-small star-17"></div>
-    <div class="star star-small star-18"></div>
-    <div class="star star-small star-19"></div>
-    <div class="star star-small star-20"></div>
-  </div>
+
   
   <div class="mx-auto max-w-6xl px-6 lg:px-8 relative z-10">
     
@@ -178,13 +148,13 @@ import Stars from "../backgrounds/Stars.astro"
         <div class="text-center mb-8">
           <!-- Icono de cohete para STARTUP -->
         
-          <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">STARTUP</h3>
+          <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-3">STARTUP</h3>
           <div class="pricing-icon">
             <svg fill="currentColor" viewBox="0 0 24 24">
               <path d="M9.5 2c-1.82 0-3.53.5-5 1.35C7 5.5 8.5 8.26 8.5 11.5c0 4.08-1.05 6.5-2.5 8.5C8.5 21 10.18 21.5 12 21.5s3.5-.5 6-1.5c-1.45-2-2.5-4.42-2.5-8.5 0-3.24 1.5-6 4-8.15C18.03 2.5 16.32 2 14.5 2 12.68 2 10.82 2 9.5 2zM12 8.5c1.38 0 2.5-1.12 2.5-2.5S13.38 3.5 12 3.5 9.5 4.62 9.5 6 10.62 8.5 12 8.5z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-500 mb-6">one-time consultation package</p>
+          <p class="text-sm text-white mb-6">paquete de consultoría única</p>
         </div>
         
         <ul class="space-y-4 mb-8">
@@ -194,7 +164,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Tech consultation</span>
+            <span class="text-sm text-white font-medium">Consultoría tecnológica</span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -202,7 +172,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">MVP development</span>
+            <span class="text-sm text-white font-medium">Desarrollo de MVP</span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -210,7 +180,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Basic deployment</span>
+            <span class="text-sm text-white font-medium">Implementación básica</span>
           </li>
         </ul>
         
@@ -220,7 +190,7 @@ import Stars from "../backgrounds/Stars.astro"
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
             </svg>
           </div>
-          Get Started
+          Comenzar
         </button>
       </div>
       
@@ -228,13 +198,13 @@ import Stars from "../backgrounds/Stars.astro"
       <div class="pricing-card pricing-card-pro transition-all duration-300">
         <div class="text-center mb-8">
           <!-- Icono de gráfica creciente para GROWTH -->
-          <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">GROWTH</h3>
+          <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-3">CRECIMIENTO</h3>
           <div class="pricing-icon">
             <svg fill="currentColor" viewBox="0 0 24 24">
               <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-500 mb-6">per month, full-stack development</p>
+          <p class="text-sm text-white mb-6">por mes, desarrollo full-stack</p>
         </div>
         
         <ul class="space-y-4 mb-8">
@@ -244,7 +214,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Complete web application</span>
+            <span class="text-sm text-white font-medium">Aplicación web completa</span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -252,7 +222,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Database design <span class="text-gray-500">& setup</span></span>
+            <span class="text-sm text-white font-medium">Diseño de base de datos <span class="text-white">& configuración</span></span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -260,7 +230,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">API development, <span class="text-gray-500">testing</span></span>
+            <span class="text-sm text-white font-medium">Desarrollo de API, <span class="text-white">pruebas</span></span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -268,7 +238,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Cloud hosting <span class="text-gray-500">setup</span></span>
+            <span class="text-sm text-white font-medium">Alojamiento en la nube <span class="text-white">configuración</span></span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -276,7 +246,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Mobile responsive, <span class="text-gray-500">PWA</span></span>
+            <span class="text-sm text-white font-medium">Responsive móvil, <span class="text-white">PWA</span></span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -284,7 +254,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">24/7 support <span class="text-gray-500">& maintenance</span></span>
+            <span class="text-sm text-white font-medium">Soporte 24/7 <span class="text-white">& mantenimiento</span></span>
           </li>
         </ul>
         
@@ -294,7 +264,7 @@ import Stars from "../backgrounds/Stars.astro"
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
             </svg>
           </div>
-          Start Project
+          Iniciar Proyecto
         </button>
       </div>
       
@@ -302,14 +272,14 @@ import Stars from "../backgrounds/Stars.astro"
       <div class="pricing-card pricing-card-team transition-all duration-300">
         <div class="text-center mb-8">
           <!-- Icono de engranajes para ENTERPRISE -->
-          <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">ENTERPRISE</h3>
+          <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-3">EMPRESA</h3>
           <div class="pricing-icon">
             <svg fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-500 mb-6">tailored enterprise solutions</p>
+          <p class="text-sm text-white mb-6">soluciones empresariales a medida</p>
         </div>
         
         <ul class="space-y-4 mb-8">
@@ -319,7 +289,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Dedicated dev team</span>
+            <span class="text-sm text-white font-medium">Equipo de desarrollo dedicado</span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -327,7 +297,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Scalable <span class="text-gray-500">architecture</span></span>
+            <span class="text-sm text-white font-medium">Arquitectura <span class="text-white">escalable</span></span>
           </li>
           <li class="flex items-center">
             <div class="check-icon mr-3">
@@ -335,7 +305,7 @@ import Stars from "../backgrounds/Stars.astro"
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <span class="text-sm text-black font-medium">Priority <span class="text-gray-500">support</span></span>
+            <span class="text-sm text-white font-medium">Soporte <span class="text-white">prioritario</span></span>
           </li>
         </ul>
         
@@ -345,7 +315,7 @@ import Stars from "../backgrounds/Stars.astro"
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
             </svg>
           </div>
-          Contact Sales
+          Contactar Ventas
         </button>
       </div>
       

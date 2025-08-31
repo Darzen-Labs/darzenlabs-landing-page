@@ -1,25 +1,25 @@
 ---
 const testimonials = [
   {
-    name: 'Rebecca Hayes',
-    description: 'Designer',
+    name: 'Walfredo Lopez',
+    description: 'Tester en Universidad de Matanzas. Cuba',
     image: '/assets/testimonial-1.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“El <span class="text-primary-500">COMPROMISO</span> de Darzen asegura la calidad de sus productos informáticos. Desde la Universidad de Matanzas agradecemos por cada hora dedicada y esperamos seguir cooperando en el futuro.”',
   },
   {
-    name: 'Rosa Spencer',
-    description: 'Team Leader',
+    name: 'Yoandry Alonso',
+    description: 'CEO en Pipo Pet Grooming',
     image: '/assets/testimonial-2.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“Trabajar con Darzen Labs para el sitio de mi negocio fue una excelente decision. Entendieron perfectamente lo que necesitaba y con la pagina web creada hemos visto un aumento significativo en las reservas. Servicio con sello de <span class="text-primary-500">RECOMENDADO</span>.”',
   },
   {
-    name: 'Christina Upton',
-    description: 'Manager',
+    name: 'Raysa Fulgueira',
+    description: 'Ing Principal en UEB',
     image: '/assets/testimonial-3.webp',
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“La contribución de Darzen Labs hizo la <span class="text-primary-500">OPTIMIZÓ</span> en gran medida el proceso de capacitacion del personal de nuestra empresa. Sin dudas la casa de software de nuestra preferencia.”',
   },
 ];
 ---
@@ -28,7 +28,7 @@ const testimonials = [
   <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
-        Trusted by the largest companies in the world
+        La <span class="text-primary-500">satisfacción</span> de nuestros clientes es un estándar. Coincidencia? 
       </h2>
       <div
         class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0"
@@ -52,7 +52,7 @@ const testimonials = [
                   ))}
                 </div>
                 <blockquote class="text-primary-950/70 dark:text-primary-200/70 text-center text-lg italic leading-loose">
-                  <p>{testimonial.message}</p>
+                  <p set:html={testimonial.message}/>
                 </blockquote>
                 <figcaption class="flex flex-col gap-4">
                   <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
