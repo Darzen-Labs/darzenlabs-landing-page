@@ -8,4 +8,11 @@ export default defineConfig({
     viewTransitions: true,
   },
   integrations: [tailwind(), compress()],
+  vite: {
+    resolve: {
+      alias: {
+        '@': '/src'
+      }
+    }
+  }
 });
