@@ -27,5 +27,25 @@ module.exports = {
       '5xl': ['3rem', '3.5rem'],
       '6xl': ['3.75rem', '4.25rem'],
     },
+    extend: {
+      keyframes: {
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(2rem)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+        'fade-in-up-delay-500': 'fade-in-up 0.8s ease-out 0.5s forwards',
+        'fade-in-up-delay-650': 'fade-in-up 0.8s ease-out 0.65s forwards',
+        'fade-in-up-delay-800': 'fade-in-up 0.8s ease-out 0.8s forwards',
+      },
+    },
   },
 };
